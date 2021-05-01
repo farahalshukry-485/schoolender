@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    
+    <form action="action_page.php" >
+
+        <div id="login-box">
+          <div class="left">
+            <h1>Log In</h1>
+            
+            <input type="text" name="username" placeholder="Username" required />
+            
+        
+  
+            <input class="pass"  type="password" placeholder="Enter Password" id="password"name="psw" required>          
+           
+  
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+
+            
+            <div class="clearfix">
+          
+            <button  onclick="passlog()" 
+            type="submit"  
+            class="pure-button pure-button-primary"  >Log In</button>
+            </div>
+
+
+        </form>
+
+  <br>
+
+  <a href="./SignIn.html">
+    Not a member yet ?
+  </a>
+  <br>
+  
+  
+  
+  
+          </div>
+         
+          
+          <div class="right">
+  
+           
+              <button onclick="window.location.href='https:/www.facebook.com'" class="social-signin facebook">Log in with facebook</button>
+           
+            
+              <button onclick="window.location.href='https:/twitter.com/i/flow/signup'" class="social-signin twitter">Log in with Twitter</button>
+              
+         
+              <button  onclick="window.location.href='https:/accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp'"class="social-signin google">Log in with Google+</button>
+  
+         
+          </div>
+          <div class="or">OR</div>
+        </div>
+  
+       
+  
+  
+  <script src="./script.js" >
+  
+  
+  </script>
+
+
+
+
+</body>
+</html>

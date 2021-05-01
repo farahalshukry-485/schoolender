@@ -11,6 +11,13 @@ function validatePassword(){
     } 
    }
 
+function passlog() {
+    if (password.value!= confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+
+}
+    
+}
 
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
